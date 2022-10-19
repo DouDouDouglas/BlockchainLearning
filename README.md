@@ -493,7 +493,7 @@ contract CallTest{ //主调合约
 
 - 如何区分合约账户和外部账户
 
-<img src="file:///var/folders/dh/wmxmnkj93492zg8jgmm3_6sr0000gn/T/TemporaryItems/NSIRD_screencaptureui_fdK511/截屏2022-10-17%2014.27.10.png" title="" alt="截屏2022-10-17 14.27.10.png" width="546">
+<img title="" src="./img/account.png" alt="截屏2022-10-17 14.27.10.png" width="546">
 
 #### (8)函数类型
 
@@ -664,6 +664,18 @@ contract testTime{
 ![截屏2022-10-19 13.10.21.png](./img/error.png)
 
 #### (5)数学及加密API
+
+- addMod...
+
+- 哈希函数（散列函数） 任意长度的输入转换为固定长度的输出
+
+> MD-4 MD-5
+> 
+> SHA-1 不安全 不同输入可能得到相同输出
+> 
+> SHA-2:SHA-256 ...
+> 
+> SHA-3:Keccak算法...
 
 #### (6)地址及合约API
 
