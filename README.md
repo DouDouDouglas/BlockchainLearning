@@ -319,7 +319,7 @@ contract SimpleStorage {
 
 - Solidity的值类型
 
-<img src="file:///var/folders/dh/wmxmnkj93492zg8jgmm3_6sr0000gn/T/TemporaryItems/NSIRD_screencaptureui_GiQ3ud/截屏2022-10-16%2016.35.28.png" title="" alt="截屏2022-10-16 16.35.28.png" width="549">
+<img title="" src="./img/valuetype.png" alt="截屏2022-10-16 16.35.28.png" width="549">
 
 #### （2）bool
 
@@ -639,11 +639,29 @@ contract testTime{
 
 #### (2)区块及交易信息API
 
-![截屏2022-10-18 10.57.34.png](/var/folders/dh/wmxmnkj93492zg8jgmm3_6sr0000gn/T/TemporaryItems/NSIRD_screencaptureui_oJZ1VN/截屏2022-10-18%2010.57.34.png)
+![截屏2022-10-18 10.57.34.png](./img/block.png)
+
+- msg.sender是主调合约地址 tx.origin仍是调用主调合约的调用人地址
 
 #### (3)ABI?（not API）
 
+- ABI：application binary interface 应用程序二进制接口
+
+- 调用一个合约函数 即 向合约地址发送一个交易 交易内容就是ABI编码数据
+
 #### (4)错误处理函数
+
+- 无cry catch 因为区块链是全球共享的分布式<mark>事务性</mark>数据库 修改要么都生效 要么全回滚
+
+- assert require revert
+
+> assert 程序内部异常 消耗掉所有剩余gas
+> 
+> require 外部条件异常 剩余gas返还调用者
+> 
+> revert 回滚
+
+![截屏2022-10-19 13.10.21.png](./img/error.png)
 
 #### (5)数学及加密API
 
